@@ -1,3 +1,9 @@
+document.querySelector(".rotatingText-adjective1").classList.add("rot1");
+document.querySelector(".rotatingText-adjective2").classList.add("rot2");
+document.querySelector(".rotatingText-adjective3").classList.add("rot3");
+document.querySelector(".rotatingText-adjective4").classList.add("rot4");
+
+/* ------------------------------------------------------------- */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -18,22 +24,3 @@ observer.observe(document.querySelector(".colorsquare"));
 
 /* 
 -------------------------TEXTCARUSEL---------------------------------- */
-
-document
-  .querySelector(".rotatingText-adjective:nth-of-type(4)")
-  .addEventListener("animationend", restartanimation);
-console.log("rotate");
-function restartanimation() {
-  document
-    .querySelector(".rotatingText-adjective:nth-of-type(1)")
-    .classList.add("rotate");
-  document
-    .querySelector(".rotatingText-adjective:nth-of-type(2)")
-    .classList.add("rotate");
-  document
-    .querySelector(".rotatingText-adjective:nth-of-type(3)")
-    .classList.add("rotate");
-  document
-    .querySelector(".rotatingText-adjective:nth-of-type(4)")
-    .classList.add("rotate");
-}

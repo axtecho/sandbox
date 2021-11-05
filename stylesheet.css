@@ -5,7 +5,7 @@
   /* border: 1px dotted; */
 }
 body {
-  margin: 0 0.5vw 0 0.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .square {
   width: 200px;
@@ -71,8 +71,6 @@ body {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /*   align-items: center;
-  justify-content: space-between; */
 }
 nav ul {
   display: flex;
@@ -106,39 +104,47 @@ li a:hover {
 #heart,
 #search,
 #login {
-  margin-right: 2vw;
+  margin-right: 1.8vw;
 }
 .logo {
   justify-self: center;
 }
 .logo img {
   height: 24px;
-  margin-top: 1.5vw;
-  margin-bottom: 1.5vw;
+  margin-top: 1.3vw;
+  margin-bottom: 1.3vw;
 }
 #basket {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   margin-right: 3vw;
 }
 
 #search {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
 #login {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
 
 #heart {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
-
+.shipping {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  align-items: center;
+  color: white;
+  font-size: 0.7rem;
+  margin-right: 3vw;
+}
 /*------------------TEXT CARUSEL----------------------------------- */
 .bluebar {
-  height: 32px;
+  height: 34px;
   background-color: #85b4d7;
   padding-left: 2vw;
   position: relative;
@@ -147,21 +153,46 @@ li a:hover {
 .textcarusel {
   display: flex;
   flex-direction: row;
-  /*   width: 400px;
- */
   overflow: hidden;
 }
 
-.rotatingText-adjective {
+.rotatingText-adjective1 {
   position: absolute;
   left: 0.2;
   top: 20%;
   text-align: center;
   opacity: 0;
+  color: white;
+  font-size: 0.8rem;
 }
-.textcarusel {
-  /* display: none; */
+.rotatingText-adjective2 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
 }
+.rotatingText-adjective3 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+.rotatingText-adjective4 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
 @keyframes rotate {
   0% {
     opacity: 0;
@@ -179,24 +210,24 @@ li a:hover {
     transform: translate3d(-50px, 0, 0);
   }
 }
-.rotatingText-adjective:nth-of-type(1) {
+.rot1 {
   animation-name: rotate;
   animation-duration: 4s;
   animation-delay: 0.5s;
 }
 
-.rotatingText-adjective:nth-of-type(2) {
+.rot2 {
   animation-name: rotate;
   animation-duration: 4s;
   animation-delay: 4.25s;
 }
 
-.rotatingText-adjective:nth-of-type(3) {
+.rot3 {
   animation-name: rotate;
   animation-duration: 4s;
   animation-delay: 8s;
 }
-.rotatingText-adjective:nth-of-type(4) {
+.rot4 {
   animation-name: rotate;
   animation-duration: 4s;
   animation-delay: 11.75s;
